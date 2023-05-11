@@ -68,18 +68,7 @@ def df_retrieve_user(df_input):
         to_name = row['to_name']
         for i in range(len(to_email)):
             
-            # print("i:",index, i, to_email,  " index:", index, to_name, len(to_name))
-            # if len(to_name) == 0:
-            #     to_name_i = ""
-            # elif len(to_name) < i+1:
-            #     to_name_i = ""
-            # elif len(to_name) >= i+1:
-            #     to_name_i = to_name[i]
-            # else:
-            #     to_name_i = ""
-            # print("ss:", to_name_i)
 
-            # print("1len:",index, len(sender),i, to_name, row['to_name'],to_email[i])
 
             if row['to_email'] and not (df_user['email'] == to_email[i]).any() :
                 if "@" in to_email[i]:
